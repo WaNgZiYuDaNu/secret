@@ -1,0 +1,12 @@
+digraph p3
+{
+    rankdir = LR;  //让图片横过来
+    node[shape = record]//record形状是专门用来做类似”结构体“的东西的
+    a[label = "{A|}"];//每个的'|'都是一列
+    b[label = "{B|}"];
+    c[label = "{C|}"];
+    d[label = "{D|NULL}"];
+    a -> b:w;
+    b->c:w;
+    c->d:w;
+}

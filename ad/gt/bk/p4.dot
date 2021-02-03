@@ -1,0 +1,6 @@
+digraph p4
+{
+    a -> { b,c,d};
+    b -> e;
+    d -> { f, g};
+}

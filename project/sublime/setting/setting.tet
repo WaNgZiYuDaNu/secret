@@ -1,0 +1,22 @@
+{
+    //主题
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+    "theme": "Adaptive.sublime-theme",
+
+    //字号
+    "font_size": 15,
+
+    //禁用包(以开启Vim插件)
+    "ignored_packages":
+    [
+    ],
+
+    //tab
+    "translate_tabs_to_spaces": true,
+    "expand_tabs_on_save": true,
+
+    //重复文件
+    "remember_open_files":true,
+
+    //
+}
