@@ -22,7 +22,7 @@ int main ( )
     {
         cin>> a [ i];
     }
-    for ( int i = 2; i <= m; i ++)
+    for ( int i = 1; i <= m; i ++)
     {
         f [ i] = MAXX;
     }
@@ -37,7 +37,7 @@ int main ( )
             {
                 break;
             }
-            if ( f [ i - a [ j]] + 1 < f [ i])
+            if ( f [ i - a [ j]] + 1 < f [ i] && f [ i - a [ j]] < MAXX)
             {
                 f [ i] = f [ i - a [ j]] + 1;
                 f2 [ i] = i - a [ j];
@@ -53,7 +53,7 @@ int main ( )
     }
     printf ( "%d\n", f [ m]);
     int i = m;
-    //printf ( "%d\n", i);
+    printf ( "%d\n", i);
     while ( i)
     {
         printf ( "%d ", i - f2 [ i]);
